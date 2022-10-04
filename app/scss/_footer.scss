@@ -1,0 +1,53 @@
+.footer{
+
+    text-align: center;
+    background:$DarkModerateCyanFooter;
+    padding: 4rem;
+
+    >h2{
+        color:$DarkDesaturatedCyanGraphicText;
+        font-size: 2.3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__links{
+        margin-bottom: 4rem;
+        >a{
+            color:$DarkDesaturatedCyanGraphicText;
+                font-family: 'Barlow', sans-serif;
+        
+                &:not(:last-child){
+                margin-right: 3rem;
+
+                
+                @include breakpoint-down(medium){
+                    margin-right: 1.5rem;
+                }
+
+
+                }
+
+        }
+    }
+
+
+    &__socials{
+
+        margin-bottom: 2rem;
+        >a{
+            font-size: 1.5rem;
+            color:$DarkDesaturatedCyanGraphicText;
+
+            &:not(:last-child){
+                margin-right: 2rem;
+
+
+                                
+                @include breakpoint-down(medium){
+                    margin-right: 1rem;
+                }
+                }
+        }
+    }
+
+}

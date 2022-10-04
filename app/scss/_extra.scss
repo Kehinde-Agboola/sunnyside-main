@@ -1,0 +1,19 @@
+.extra{
+    margin-top: -4rem;
+    overflow:hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+
+    @include breakpoint-down(medium){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint-down(small){
+        margin-top: -2rem;
+    }
+
+    >img{
+        width: 100%;
+    }
+}

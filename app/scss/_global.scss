@@ -1,0 +1,105 @@
+html{
+    font-size:100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+
+    padding:0;
+    margin:0;
+    line-height: 1.3;
+    font-size: 1.125rem;
+
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
+
+
+
+    &.noscroll{
+        overflow: hidden;
+    }
+
+}
+
+
+*, a:visited, a:hover{
+    text-decoration: none; 
+}
+
+.button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
+    // padding:0.875rem 1rem;
+    border-radius: 50px;
+    border-radius: 2rem;
+    cursor: pointer;
+    border:none;
+    background: $White;
+    color:$VeryDarkDesaturatedBlue;
+
+   
+
+
+
+    position: relative;
+    overflow: hidden;
+
+
+
+    
+}
+
+
+ul{list-style: none;}
+
+// flexbox syles
+.flex{
+    display:flex;
+
+    &-jc-sb{
+        justify-content: space-between;  
+    }
+    &-jc-c{
+        justify-content: center;
+    }
+    &-ai-c{
+        align-items: center;
+    }
+
+    &-ai-s{
+        align-items: start;
+    }
+
+}
+
+.container{
+    max-width: 90.375rem;
+    margin: 0 auto;
+    
+}
+
+// visibility
+.hide-for-mobile{
+    // hide for tablets and mobile
+    @include breakpoint-down(medium){
+        display:none;
+    }
+}
+
+.hide-for-desktop{
+    @include breakpoint-up(large){
+        display:none;
+    }
+}  
+
+h1, h2, h3{
+    margin-top:0;
+}
+

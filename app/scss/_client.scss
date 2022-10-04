@@ -1,0 +1,95 @@
+.client{
+    background: $mobileBackground;
+    text-align: center;
+    padding:7rem;
+
+    @include breakpoint-down(small){
+        padding: 1.5rem;
+    }
+
+
+    >h1{
+        text-transform: uppercase;
+        padding-bottom: 4rem;
+        color: $GrayishBlue;
+        letter-spacing: 0.3rem;
+        font-size:1.2rem;
+
+        @include breakpoint-down(small){
+            font-size:1rem;
+            padding-top: 4rem;
+        }
+    }
+
+    &__grid{
+            display:flex;
+            justify-content: space-between;
+
+            @include breakpoint-down(medium){
+                    display:block;
+            }
+
+
+        >div>img{
+            width: 15%;
+            border-radius: 50%;
+            margin-bottom: 2.6rem;
+
+            @include breakpoint-down(small){
+                width:25%;
+                margin-bottom: 1rem;
+            }
+        }
+
+
+
+        >div{
+           
+            // padding-left: 4rem;
+            // padding-right: 4rem;
+
+            p{
+                line-height: 1.5;
+                font-family: 'Barlow', sans-serif;
+                font-weight: 200;
+                color:$DarkBluePhotographytext;
+                width: 80%;
+               
+
+                position: relative;
+                left: 50%;
+                transform: translate(-50%);
+                margin-bottom: 5rem;
+
+                @include breakpoint-down(medium){
+                    width: 90%;
+                }
+
+                @include breakpoint-down(small){
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+
+                // font-size: 1.2rem;
+            }
+
+            >div:last-child{
+                // margin-top: 4rem;
+
+                @include breakpoint-down(small){
+                    padding-bottom: 4rem;
+                }
+
+                h2{
+                    font-size: 1.3rem;
+                }
+                >p{
+                    margin-top: -1rem;
+                    font-size: 1rem;
+                    color:$GrayishBlue;
+                }
+            }
+
+        }
+    }
+}
